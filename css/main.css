@@ -5,6 +5,9 @@ body{
     font-family: 'Roboto', sans-serif;
     width: 100%;
 }
+a {
+    text-decoration: none;
+}
 section{
     padding-left: 15px;
     padding-right: 15px;
@@ -135,11 +138,10 @@ section{
     justify-content: start;
     align-items: center;
     width: 100%;
-    min-height: 1024px;
-    max-height: 1024px;
+    height: 1024px;
     background: url("../img/bg-1.png") no-repeat;
     background-size: cover;
-
+    background-position: bottom;
 }
 
 .more h1{
@@ -586,7 +588,7 @@ section{
     margin-bottom: 35px;
 }
 .subscribe-item:nth-last-child(2){
-    margin-bottom: 65px;
+    margin-bottom: 80px;
 }
 .subscribe-item span{
     font-weight: 500;
@@ -614,6 +616,7 @@ section{
     margin-left: 10px;
     
 }
+
 .email-subscribe{
     display: flex;
     align-items: center;
@@ -714,6 +717,7 @@ section{
         max-width: 545px;
         display: flex;
         flex-direction: column;
+        
     }
     .footer form .subscribe{
         padding-bottom: 125px;
@@ -727,9 +731,16 @@ section{
     }
     .subscribe{
         padding-bottom: 100px;
+        
     }
     .subscribe-inner{
         margin: 50px 30px 0 30px;
+    }
+    .soc-network{
+        max-width: 545px;
+        text-align: start;
+        margin-top: -100px;
+        padding: 0;
     }
 }
 @media (max-width: 1140px){
@@ -747,7 +758,18 @@ section{
         margin-top: 70px;
     }
 }
-
+@media (max-width: 1024px){
+    .services {
+        padding-top: 0px;
+    }
+    .news-time-icon{
+        width: 100px;
+        height: 125px;
+    }
+    .services {
+        padding-bottom: 100px;
+    }
+}
 @media (max-width: 1000px){
     .main-header nav{
         display: none;
@@ -765,6 +787,14 @@ section{
         display: block;
         position: absolute;
         top: 45px;
+    }
+    .more{
+        align-items: normal;
+        padding-top: 150px;
+        height: 900px;
+    }
+    .more h1{
+        font-size: 65px;
     }
 }
 
@@ -792,9 +822,6 @@ section{
     }
 }
 @media (max-width: 740px){
-    .more h1{
-        font-size:80px;
-    }
     .about-me-info{
         text-align: center;
     }
@@ -808,11 +835,20 @@ section{
     .services-variaty .services-variaty-item{
         margin-top: 70px;
     }
+    .services-header-wrapper{
+        margin-bottom: 50px;
+    }
+    .news-time-icon-wrapper{
+        width: 90px;
+        height: 100px;   
+    }
+    .news-time-icon{
+        width: 90px;
+        height: 100px;
+    }
 }
 @media (max-width: 630px){
-    .more h1{
-        font-size: 70px;
-    }
+
     .adv-wrapper{
         max-width: 500px;
     }
@@ -822,11 +858,28 @@ section{
     .advantages-item:last-child{
         margin: 0;
     }
+    .more{
+        height: 700px;
+    }
+    .more h1{
+        margin-bottom: 60px;
+    }
+    .advatages-item-icon-wrapper{
+        width: 120px;
+        height: 120px;
+        margin-top: 20px;
+    }
+    .advatages-item-icon-wrapper .advatages-item-icon{
+        width: 50px;
+        height: 70px;
+    }
+    .advantages-item-text{
+        font-size: 22px;
+    }
 }
 @media (max-width: 600px){
     .contact-info{
         flex-direction: column;
-        
     }
     .contact-item-wrapper{
         margin: 0;
@@ -850,13 +903,14 @@ section{
         margin-top: 30px;
     }
 
-    /* .footer{
-        padding: 0 15px;
-    } */
+    .more {
+        padding-top: 160px;
+    }
 }
 @media (max-width: 550px){
     .more h1{
         font-size: 60px;
+        line-height: normal;
     }
 }
 @media (max-width: 480px){
@@ -865,6 +919,7 @@ section{
     }
     .more h1{
         font-size: 50px;
+        margin-bottom: 50px;
     }
 
 }
@@ -895,5 +950,29 @@ section{
 @media (max-width:340px){
     .email-subcribe-input{
         width: 240px;
+    }
+}
+[data-aos]{
+}
+@media only screen and (max-width : 768px) {
+    .animated {
+        /*CSS transitions*/
+        -o-transition-property: none !important;
+        -moz-transition-property: none !important;
+        -ms-transition-property: none !important;
+        -webkit-transition-property: none !important;
+        transition-property: none !important;
+        /*CSS transforms*/
+        -o-transform: none !important;
+        -moz-transform: none !important;
+        -ms-transform: none !important;
+        -webkit-transform: none !important;
+        transform: none !important;
+        /*CSS animations*/
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
     }
 }
